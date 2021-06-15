@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "randomness.net", "randomness.net.csproj", "{8F8B5DB3-19D9-44F5-85C0-EA832D6D925B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Randomness", "..\Randomness\Randomness.csproj", "{82A01B2C-574C-4EDE-B79F-0F254AE38805}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F8B5DB3-19D9-44F5-85C0-EA832D6D925B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F8B5DB3-19D9-44F5-85C0-EA832D6D925B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F8B5DB3-19D9-44F5-85C0-EA832D6D925B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F8B5DB3-19D9-44F5-85C0-EA832D6D925B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82A01B2C-574C-4EDE-B79F-0F254AE38805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82A01B2C-574C-4EDE-B79F-0F254AE38805}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82A01B2C-574C-4EDE-B79F-0F254AE38805}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82A01B2C-574C-4EDE-B79F-0F254AE38805}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FF7E3DB3-2AC6-47FE-9C15-FF93F10DF5FE}
+	EndGlobalSection
+EndGlobal
