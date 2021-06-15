@@ -1,15 +1,14 @@
-﻿// Cool implementation to showcase Random()'s characteristics when generating passwords.
-// shamelessly stolen from https://github.com/rohitg15 :)
-
-namespace randomness.netcore
+﻿namespace Randomness
 {
+    // Cool implementation to showcase Random()'s characteristics when generating passwords.
+    // shamelessly stolen from https://github.com/rohitg15 :)
+
     using System;
-    using System.Linq;
     using System.Collections.Generic;
 
     class Program
     {
-        static string charSet = "abcdefghijklmnopqrstuvwxyz0123456789";
+        static string charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 
         public static string GenerateRandomPassword(int length = 8)
         {
@@ -29,7 +28,7 @@ namespace randomness.netcore
         {
             Dictionary<string, int> table = new Dictionary<string, int>();
 
-            Console.Write($"Generating {pwLen} char: ");
+            Console.Write("{0,2} chars: ", pwLen);
 
             for (int i = 0; i < numPasswords; ++i)
             {
@@ -42,14 +41,20 @@ namespace randomness.netcore
 
         static void Main(string[] args)
         {
-            int numPasswords = 100000;
+            int numPasswords = 10000;
             int pwLen = 8;
+            int maxpwLen = 16;
 
-            for (int i = 0; i < 10; ++i)
+            Console.WriteLine($".NET random() password generator");
+            for (int i = pwLen; i <= maxpwLen; ++i)
             {
-                DoRun(numPasswords, pwLen);
+                DoRun(numPasswords, i);
             }
-
+            Console.ReadKey();
         }
     }
+
 }
+
+
+
